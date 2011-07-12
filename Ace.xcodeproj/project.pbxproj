@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0859A61013C661B000F963D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0859A60F13C661B000F963D6 /* UIKit.framework */; };
+		0859A61213C661B000F963D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0859A61113C661B000F963D6 /* Foundation.framework */; };
+		0859A61413C661B000F963D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0859A61313C661B000F963D6 /* CoreGraphics.framework */; };
+		0859A61A13C661B000F963D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0859A61813C661B000F963D6 /* InfoPlist.strings */; };
+		0859A61D13C661B000F963D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0859A61C13C661B000F963D6 /* main.m */; };
+		0859A62013C661B000F963D6 /* AceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0859A61F13C661B000F963D6 /* AceAppDelegate.m */; };
+		0859A62313C661B000F963D6 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0859A62113C661B000F963D6 /* MainWindow.xib */; };
+		0859A62613C661B000F963D6 /* AceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0859A62513C661B000F963D6 /* AceViewController.m */; };
+		0859A63113C6624C00F963D6 /* AceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0859A63013C6624C00F963D6 /* AceView.m */; };
+		0859DB2013CC85970093CE08 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 0859DB1F13CC85970093CE08 /* heart.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0859A60B13C661B000F963D6 /* Ace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0859A60F13C661B000F963D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0859A61113C661B000F963D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0859A61313C661B000F963D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0859A61713C661B000F963D6 /* Ace-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ace-Info.plist"; sourceTree = "<group>"; };
+		0859A61913C661B000F963D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0859A61B13C661B000F963D6 /* Ace-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ace-Prefix.pch"; sourceTree = "<group>"; };
+		0859A61C13C661B000F963D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0859A61E13C661B000F963D6 /* AceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AceAppDelegate.h; sourceTree = "<group>"; };
+		0859A61F13C661B000F963D6 /* AceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AceAppDelegate.m; sourceTree = "<group>"; };
+		0859A62213C661B000F963D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		0859A62413C661B000F963D6 /* AceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AceViewController.h; sourceTree = "<group>"; };
+		0859A62513C661B000F963D6 /* AceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AceViewController.m; sourceTree = "<group>"; };
+		0859A62F13C6624C00F963D6 /* AceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AceView.h; sourceTree = "<group>"; };
+		0859A63013C6624C00F963D6 /* AceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AceView.m; sourceTree = "<group>"; };
+		0859DB1F13CC85970093CE08 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0859A60813C661B000F963D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0859A61013C661B000F963D6 /* UIKit.framework in Frameworks */,
+				0859A61213C661B000F963D6 /* Foundation.framework in Frameworks */,
+				0859A61413C661B000F963D6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0859A60013C661B000F963D6 = {
+			isa = PBXGroup;
+			children = (
+				0859A61513C661B000F963D6 /* Ace */,
+				0859A60E13C661B000F963D6 /* Frameworks */,
+				0859A60C13C661B000F963D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0859A60C13C661B000F963D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0859A60B13C661B000F963D6 /* Ace.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0859A60E13C661B000F963D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0859A60F13C661B000F963D6 /* UIKit.framework */,
+				0859A61113C661B000F963D6 /* Foundation.framework */,
+				0859A61313C661B000F963D6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0859A61513C661B000F963D6 /* Ace */ = {
+			isa = PBXGroup;
+			children = (
+				0859DB1E13CC85970093CE08 /* Resources */,
+				0859A61E13C661B000F963D6 /* AceAppDelegate.h */,
+				0859A61F13C661B000F963D6 /* AceAppDelegate.m */,
+				0859A62113C661B000F963D6 /* MainWindow.xib */,
+				0859A62413C661B000F963D6 /* AceViewController.h */,
+				0859A62513C661B000F963D6 /* AceViewController.m */,
+				0859A61613C661B000F963D6 /* Supporting Files */,
+				0859A62F13C6624C00F963D6 /* AceView.h */,
+				0859A63013C6624C00F963D6 /* AceView.m */,
+			);
+			path = Ace;
+			sourceTree = "<group>";
+		};
+		0859A61613C661B000F963D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0859A61713C661B000F963D6 /* Ace-Info.plist */,
+				0859A61813C661B000F963D6 /* InfoPlist.strings */,
+				0859A61B13C661B000F963D6 /* Ace-Prefix.pch */,
+				0859A61C13C661B000F963D6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0859DB1E13CC85970093CE08 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0859DB1F13CC85970093CE08 /* heart.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0859A60A13C661B000F963D6 /* Ace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0859A62C13C661B000F963D6 /* Build configuration list for PBXNativeTarget "Ace" */;
+			buildPhases = (
+				0859A60713C661B000F963D6 /* Sources */,
+				0859A60813C661B000F963D6 /* Frameworks */,
+				0859A60913C661B000F963D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ace;
+			productName = Ace;
+			productReference = 0859A60B13C661B000F963D6 /* Ace.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0859A60213C661B000F963D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Logica;
+			};
+			buildConfigurationList = 0859A60513C661B000F963D6 /* Build configuration list for PBXProject "Ace" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0859A60013C661B000F963D6;
+			productRefGroup = 0859A60C13C661B000F963D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0859A60A13C661B000F963D6 /* Ace */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0859A60913C661B000F963D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0859A61A13C661B000F963D6 /* InfoPlist.strings in Resources */,
+				0859A62313C661B000F963D6 /* MainWindow.xib in Resources */,
+				0859DB2013CC85970093CE08 /* heart.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0859A60713C661B000F963D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0859A61D13C661B000F963D6 /* main.m in Sources */,
+				0859A62013C661B000F963D6 /* AceAppDelegate.m in Sources */,
+				0859A62613C661B000F963D6 /* AceViewController.m in Sources */,
+				0859A63113C6624C00F963D6 /* AceView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0859A61813C661B000F963D6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0859A61913C661B000F963D6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0859A62113C661B000F963D6 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0859A62213C661B000F963D6 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0859A62A13C661B000F963D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0859A62B13C661B000F963D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		0859A62D13C661B000F963D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ace/Ace-Prefix.pch";
+				INFOPLIST_FILE = "Ace/Ace-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0859A62E13C661B000F963D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ace/Ace-Prefix.pch";
+				INFOPLIST_FILE = "Ace/Ace-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0859A60513C661B000F963D6 /* Build configuration list for PBXProject "Ace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0859A62A13C661B000F963D6 /* Debug */,
+				0859A62B13C661B000F963D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0859A62C13C661B000F963D6 /* Build configuration list for PBXNativeTarget "Ace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0859A62D13C661B000F963D6 /* Debug */,
+				0859A62E13C661B000F963D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0859A60213C661B000F963D6 /* Project object */;
+}
