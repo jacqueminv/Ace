@@ -17,6 +17,7 @@
 		0859A62613C661B000F963D6 /* AceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0859A62513C661B000F963D6 /* AceViewController.m */; };
 		0859A63113C6624C00F963D6 /* AceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0859A63013C6624C00F963D6 /* AceView.m */; };
 		0859DB2013CC85970093CE08 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 0859DB1F13CC85970093CE08 /* heart.png */; };
+		0859DB3B13CEC2E90093CE08 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0859DB3A13CEC2E90093CE08 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0859A62F13C6624C00F963D6 /* AceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AceView.h; sourceTree = "<group>"; };
 		0859A63013C6624C00F963D6 /* AceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AceView.m; sourceTree = "<group>"; };
 		0859DB1F13CC85970093CE08 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		0859DB3A13CEC2E90093CE08 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0859DB3B13CEC2E90093CE08 /* QuartzCore.framework in Frameworks */,
 				0859A61013C661B000F963D6 /* UIKit.framework in Frameworks */,
 				0859A61213C661B000F963D6 /* Foundation.framework in Frameworks */,
 				0859A61413C661B000F963D6 /* CoreGraphics.framework in Frameworks */,
@@ -72,6 +75,7 @@
 		0859A60E13C661B000F963D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0859DB3A13CEC2E90093CE08 /* QuartzCore.framework */,
 				0859A60F13C661B000F963D6 /* UIKit.framework */,
 				0859A61113C661B000F963D6 /* Foundation.framework */,
 				0859A61313C661B000F963D6 /* CoreGraphics.framework */,

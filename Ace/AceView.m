@@ -8,6 +8,7 @@
 
 #import "AceView.h"
 #import <math.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface AceView ()
 
@@ -104,12 +105,20 @@
     if (event.type == UIEventTypeTouches) {
         bouncing = ~bouncing;
         
-        if (bouncing) { 
-            [UIView animateWithDuration:1
-                                  delay:0
-                                options: UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse
-                              animations:^{_centerHeart.alpha = 0;}
-                             completion:^(BOOL done){_centerHeart.alpha = 1;}];
+        if (bouncing) {
+            
+            CABasicAnimation* fade = [CABasicAnimation animationWithKeyPath:@"opacity"];
+            fade.autoreverses = YES;
+            fade.repeatCount = HUGE_VALF;
+            fade.fromValue = [NSNumber numberWithInt:1];
+            fade.toValue = [NSNumber numberWithInt:0];
+            fade.duration = 1;
+            [_centerHeart.layer addAnimation:fade forKey:@"fade"];
+            
+        } else {
+            
+            [_centerHeart.layer removeAnimationForKey:@"fade"];
+            
         }
         
     }
