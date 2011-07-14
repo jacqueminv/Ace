@@ -15,6 +15,8 @@
     UIImageView* _topLeftHeart;
     UIImageView* _bottomRightHeart;
     UIImageView* _centerHeart;
+    
+    BOOL bouncing;
 }
 
 @end

@@ -24,6 +24,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        bouncing = NO;
         
         _centerHeart = [[UIImageView alloc] initWithImage:self.heart];
         _centerHeart.center = CGPointMake(frame.origin.x + frame.size.width / 2, 
@@ -94,6 +95,24 @@
     ace.font = [UIFont fontWithName:@"Times New Roman" size:34];
     
     return ace;
+}
+
+#pragma mark - Touch handler
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    if (event.type == UIEventTypeTouches) {
+        bouncing = ~bouncing;
+        
+        if (bouncing) { 
+            [UIView animateWithDuration:1
+                                  delay:0
+                                options: UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse
+                              animations:^{_centerHeart.alpha = 0;}
+                             completion:^(BOOL done){_centerHeart.alpha = 1;}];
+        }
+        
+    }
 }
 
 @end
