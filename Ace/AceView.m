@@ -24,9 +24,7 @@
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
-    if (self) {
-        bouncing = NO;
-        
+    if (self) {        
         _centerHeart = [[UIImageView alloc] initWithImage:self.heart];
         _centerHeart.center = CGPointMake(frame.origin.x + frame.size.width / 2, 
                                           frame.origin.y + frame.size.height / 2);
@@ -55,8 +53,7 @@
                                              frame.origin.y + frame.size.height - 85,
                                              25,
                                              25);
-        
-        
+
         [self addSubview:_topLeftNumber];
         [self addSubview:_topLeftHeart];
         [self addSubview:_bottomRightNumber];
@@ -96,32 +93,6 @@
     ace.font = [UIFont fontWithName:@"Times New Roman" size:34];
     
     return ace;
-}
-
-#pragma mark - Touch handler
-
-- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    if (event.type == UIEventTypeTouches) {
-        bouncing = ~bouncing;
-        
-        if (bouncing) {
-            
-            CABasicAnimation* fade = [CABasicAnimation animationWithKeyPath:@"opacity"];
-            fade.autoreverses = YES;
-            fade.repeatCount = HUGE_VALF;
-            fade.fromValue = [NSNumber numberWithInt:1];
-            fade.toValue = [NSNumber numberWithInt:0];
-            fade.duration = 1;
-            [_centerHeart.layer addAnimation:fade forKey:@"fade"];
-            
-        } else {
-            
-            [_centerHeart.layer removeAnimationForKey:@"fade"];
-            
-        }
-        
-    }
 }
 
 @end

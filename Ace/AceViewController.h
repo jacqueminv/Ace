@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface AceViewController : UIViewController {
-    
+    UIView* _frontside;
+    UIView* _backside;
+    BOOL front;
 }
 
 @end

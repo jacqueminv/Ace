@@ -9,10 +9,19 @@
 #import "AceViewController.h"
 #import "AceView.h"
 
+@interface AceViewController ()
+- (void) flip:(UITapGestureRecognizer *)sender;
+@end
+
+
 @implementation AceViewController
 
 - (void)dealloc
 {
+    [_frontside release];
+    _frontside = nil;
+    [_backside release];
+    _backside = nil;
     [super dealloc];
 }
 
@@ -21,11 +30,44 @@
 
 - (void)loadView
 {
+    front = YES;
     self.wantsFullScreenLayout = YES;
+      
+    _frontside = [[AceView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
+
+    _backside = [[UIView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
     
-    AceView *view = [[AceView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
-    self.view = view;
-    [view release];
+    UIGestureRecognizer* tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(flip:)];
+    [_frontside addGestureRecognizer:tap];
+    [tap release];
+    
+    tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(flip:)];
+    [_backside addGestureRecognizer:tap];
+    [tap release];
+    
+    self.view = _frontside;
+    
+}
+
+#pragma mark - Event handling
+
+- (void) flip:(UITapGestureRecognizer *)sender
+{
+    if (sender.state == UIGestureRecognizerStateEnded) {
+        
+        if (front) {
+        
+            [UIView transitionFromView:_frontside toView:_backside duration:1 options:UIViewAnimationOptionTransitionFlipFromLeft completion:NULL];
+            front = NO;
+            
+        } else {
+            
+            [UIView transitionFromView:_backside toView:_frontside duration:1 options:UIViewAnimationOptionTransitionFlipFromRight completion:NULL];
+            front = YES;
+            
+        }
+        
+    }
 }
 
 @end
